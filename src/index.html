@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1 class="logo__line1">Denys Zhylin</h1>
-                <h2 class="logo__line2">Filmmaker, Motion Designer</h2>
-            </div>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__list-item">
-                        <a class="main-nav__link" href="#">Home</a>
-                    </li>
-                    <li class="main-nav__list-item">
-                        <a class="main-nav__link" href="#">Filmmaking</a>
-                    </li>
-                    <li class="main-nav__list-item">
-                        <a class="main-nav__link" href="#">Motion Design</a>
-                    </li>
-                    <li class="main-nav__list-item">
-                        <a class="main-nav__link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+<header class="header">
+    <div class="container container--header">
+        <div class="logo">
+            <h1 class="logo__line1">Denys Zhylin</h1>
+            <h2 class="logo__line2">Filmmaker, Motion Designer</h2>
         </div>
-    </header>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__list-item">
+                    <a class="main-nav__link" href="#">Home</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a class="main-nav__link" href="#">Filmmaking</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a class="main-nav__link" href="#">Motion Design</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a class="main-nav__link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <section class="section section--intro">
     <video class="video video--intro" preload loop src=""></video>
@@ -38,12 +38,127 @@
     <div class="container container--full-height">
         <div class="intro-text">
             <div class="intro-text__heading">I love making stuff</div>
-            <p class="intro-text__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam debitis earum iusto laudantium obcaecati provident quidem vitae voluptates voluptatibus?</p>
+            <p class="intro-text__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam
+                debitis earum iusto laudantium obcaecati provident quidem vitae voluptates voluptatibus?</p>
             <button class="btn btn-empty" type="button">Watch</button>
         </div>
     </div>
 </section>
 
-<section class="section section--intro"></section>
+<section class="section section--works">
+    <div class="container">
+        <h3 class="heading">Works</h3>
+
+        <ul class="works-filter">
+            <li class="works-filter__item">All</li>
+            <li class="works-filter__item">Filmmaking</li>
+            <li class="works-filter__item">Motion Design</li>
+        </ul>
+
+        <ul class="works-list">
+            <li class="works-list__item">
+                <figure class="effect-sadie">
+                    <img class="effect-sadie__image" src="img/2.jpg" alt="img02"/>
+                    <figcaption class="effect-sadie__caption">
+                        <h2 class="effect-sadie__heading">Holy <span>Sadie</span></h2>
+                        <p class="effect-sadie__desc">Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                        <a class="effect-sadie__more" href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="section section--ido">
+    <div class="container">
+        <h3 class="heading">What I Do</h3>
+
+        <div class="row-i-do">
+            <div class="i-do-item">
+                <div class="i-do-item__icon">icon</div>
+                <h4 class="i-do-item__heading">Pre-production</h4>
+                <p class="i-do-item__description">
+                    Experience in all stages of content production – from concepting,
+                    storyboards and scripts creation to completion and delivery;
+                </p>
+            </div>
+            <div class="i-do-item">
+                <div class="i-do-item__icon">icon</div>
+                <h4 class="i-do-item__heading">Production</h4>
+                <p class="i-do-item__description">
+                    Titles, trailers, and teasers creation
+                </p>
+            </div>
+            <div class="i-do-item">
+                <div class="i-do-item__icon">icon</div>
+                <h4 class="i-do-item__heading">Post-production</h4>
+                <p class="i-do-item__description">
+                    Edit, color grade and create final versions
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--about">
+    <div class="container">
+        <h3 class="heading">About</h3>
+
+        <p class="about-text">
+            Denys Zhylin, ukrainian filmmaker, director and motion designer with over 4 years of experience.
+            He has created commercials, trailers, titles and tutorials in main team positions: scriptwriter, director,
+            director of photography, sound designer, editor, motion designer, color grading artist.
+        </p>
+
+        <h4 class="skills-heading">Skills</h4>
+
+        <ul class="list">
+            <li class="list__item">
+                Experience in all stages of content production – from concepting, storyboards and scripts
+                creation to completion and delivery;
+            </li>
+            <li class="list__item">
+                Titles, trailers, and teasers creation – his projects are used in various commercials and teasers,
+                including teaser of Hollywood DP Shane Hurlbut (Shane’s Inner Circle);
+            </li>
+            <li class="list__item">
+                Canon, Sony, RED cameras hands-on experience;
+            </li>
+            <li class="list__item">
+                Adobe Creative Cloud (After Effects, Premiere, Photoshop, Audition) deep knowlege;
+            </li>
+            <li class="list__item">
+                Apple FCPX, Apple Motion deep knowledge
+            </li>
+            <li class="list__item">
+                DaVinci Reslove
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section--contact">
+    <div class="container">
+        <h3 class="heading">Contact</h3>
+
+        <form class="feedback" action="">
+            <textarea class="input" name="message" placeholder="Message"></textarea>
+            <input class="input" type="text" name="name" placeholder="Name"/>
+            <input class="input" type="email" name="email" placeholder="Email"/>
+
+            <button class="btn btn-empty" type="submit">Send</button>
+        </form>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        copyrights or other shit 2017. all rights aren’t reserved
+    </div>
+</footer>
+
 </body>
 </html>
