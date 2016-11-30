@@ -17,6 +17,7 @@ body {
 .header {
     background: rgba(0,0,0,.5);
     padding: 15px 0;
+    /*margin-bottom: -10;*/
 }
 
 .container {
@@ -51,4 +52,70 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.main-nav__list-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.main-nav__link {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    display: block;
+    padding: .5em;
+    user-select: none;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+    color: #929292;
+}
+
+.main-nav__list-item:hover .main-nav__link {
+    color: #d94f5c;
+}
+
+.main-nav__link::before,
+.main-nav__link::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    border: 2px solid #d94f5c;
+    transition: transform 0.3s, opacity 0.3s;
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+}
+
+.main-nav__link::before {
+    top: 0;
+    left: 0;
+    border-width: 2px 0 0 2px;
+    transform: translate3d(10px, 10px, 0);
+}
+
+.main-nav__link::after {
+    right: 0;
+    bottom: 0;
+    border-width: 0 2px 2px 0;
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.main-nav__list-item:hover .main-nav__link::before,
+.main-nav__list-item:hover  .main-nav__link::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+.section--intro {
+    background: url("../img/bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    min-height: 100vh;
 }
